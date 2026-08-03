@@ -1,0 +1,51 @@
+# =====================================================================
+# .gitignore for B&R Automation Studio projects
+# Based on community-verified patterns (br-automation.com forum,
+# toptal.com/developers/gitignore, github.com/bee-eater/AS-gitignore)
+#
+# Only version the actual source: the .apj project file plus the
+# Logical/ and Physical/ folders. Everything below is generated
+# automatically by Automation Studio on open/compile/transfer and
+# should never be committed.
+# =====================================================================
+
+# AR system files pulled in per-project (not part of your source)
+/AS/System/
+**/AS/System/
+
+# Build output — fully regenerated on every compile
+/Binaries/
+**/Binaries/
+
+# Temporary working files created when the project is opened
+/Temp/
+**/Temp/
+
+# Debug/Watch window configuration (local to a dev machine)
+/Diagnosis/
+**/Diagnosis/
+
+# Temporary safety-application files (SafeDESIGNER / safety CPUs)
+/Physical/*/*/*/DLFiles/
+**/DLFiles/
+
+# AS component upgrade packages — not part of source code
+/Upgrades/
+**/Upgrades/
+
+# Per-user settings and "is this project already open" lock markers
+*.set
+*.isopen
+
+# Logs
+/debug.log
+/ConvertLog.txt
+
+# Packed/exported project archives (re-export instead of committing)
+*.zip
+
+# OS / editor noise
+Thumbs.db
+.DS_Store
+*.swp
+*~
