@@ -5,7 +5,7 @@
     <File Description="Init, cyclic, exit code">Main.st</File>
     <File Description="Local data types" Private="true">Types.typ</File>
     <File Description="Local variables" Private="true">Variables.var</File>
-    <File Description="Actuator control function block declaration" Private="true">ActuatorControl.fun</File>
-    <File Description="Actuator control function block implementation">ActuatorControl.st</File>
+    <File Description="Sensor simulation for ActCtrl (ARsim only) - declaration" Private="true">ActCtrlSim.fun</File>
+    <File Description="Sensor simulation for ActCtrl (ARsim only) - implementation" Private="true">ActCtrlSim.st</File>
   </Files>
 </Program>

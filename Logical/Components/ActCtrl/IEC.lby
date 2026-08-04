@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Library SubType="IEC" Description="Actuator control function block: drives a single-coil actuator via one digital output based on an extend/retract command and two position sensors." xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File Description="Function block declaration">ActCtrl.fun</File>
+    <File Description="Function block implementation">ActCtrl.st</File>
+    <File Description="Library data types" Private="true">ActCtrl.typ</File>
+    <File Description="Library variables" Private="true">ActCtrl.var</File>
+  </Files>
+</Library>

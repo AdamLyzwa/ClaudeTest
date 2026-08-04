@@ -5,14 +5,13 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	fbActuator(
-		i_xCmdExtend    := xCmdExtend,
-		i_xSenRetracted := xSignal1,
-		i_xSenExtended  := xSignal2,
-		i_xErrorAck     := xErrorAck
+	(* symulacja czujników pozycji na podstawie wysterowania z ActCtrl - tylko do testów w ARsim *)
+	fbActCtrlSim(Output := fbActCtrl.Sts.Output);
+
+	fbActCtrl(
+		SensorRetracted := fbActCtrlSim.SensorRetracted,
+		SensorExtended  := fbActCtrlSim.SensorExtended
 	);
-	xActuatorOutput := fbActuator.q_xOutput;
-	xActuatorError  := fbActuator.q_xError;
 END_PROGRAM
 
 PROGRAM _EXIT
