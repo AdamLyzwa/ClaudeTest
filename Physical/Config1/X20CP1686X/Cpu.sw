@@ -4,5 +4,10 @@
   <TaskClass Name="Cyclic#1" />
   <TaskClass Name="Cyclic#2" />
   <TaskClass Name="Cyclic#3" />
-  <TaskClass Name="Cyclic#4" />
+  <TaskClass Name="Cyclic#4">
+    <Task Name="TestPrg" Source="Source.TestPrg.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+  </TaskClass>
+  <Libraries>
+    <LibraryObject Name="standard" Source="Libraries.standard.lby" Memory="UserROM" Language="binary" Debugging="true" />
+  </Libraries>
 </SwConfiguration>

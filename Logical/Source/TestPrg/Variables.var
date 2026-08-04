@@ -1,0 +1,16 @@
+
+VAR
+	fbActuator      : FB_ActuatorControl;
+
+	xCmdExtend      : BOOL;  (* komenda: TRUE = wysuń, FALSE = cofnij *)
+	xSignal1        : BOOL;  (* czujnik pozycji cofniętej - do zmapowania na wejście cyfrowe *)
+	xSignal2        : BOOL;  (* czujnik pozycji wysuniętej - do zmapowania na wejście cyfrowe *)
+	xErrorAck       : BOOL;  (* kasowanie błędu *)
+
+	xActuatorOutput : BOOL;  (* wyjście cyfrowe do siłownika - do zmapowania na wyjście cyfrowe *)
+	xActuatorError  : BOOL;
+END_VAR
+
+VAR CONSTANT
+
+END_VAR
