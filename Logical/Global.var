@@ -1,6 +1,6 @@
 
 VAR
-
+	gSystemReady : BOOL;  (* przykładowa zmienna globalna *)
 END_VAR
 
 VAR CONSTANT
